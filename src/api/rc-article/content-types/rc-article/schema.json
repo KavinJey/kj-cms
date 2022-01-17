@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rc_articles",
+  "info": {
+    "singularName": "rc-article",
+    "pluralName": "rc-articles",
+    "displayName": "RC - Article",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "article": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blog.article"
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::author.author"
+    }
+  }
+}

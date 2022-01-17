@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kj_tags",
+  "info": {
+    "singularName": "kj-tag",
+    "pluralName": "kj-tags",
+    "displayName": "KJ - Tags",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tag": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blog.tag"
+    }
+  }
+}

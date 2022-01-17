@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kj_pages",
+  "info": {
+    "singularName": "kj-page",
+    "pluralName": "kj-pages",
+    "displayName": "KJ - Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "seo_description": {
+      "type": "text"
+    },
+    "kj_tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::kj-tag.kj-tag"
+    }
+  }
+}

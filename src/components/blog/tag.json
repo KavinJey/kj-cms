@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blog_tags",
+  "info": {
+    "displayName": "Tag",
+    "icon": "angle-right"
+  },
+  "options": {},
+  "attributes": {
+    "tag": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    }
+  }
+}

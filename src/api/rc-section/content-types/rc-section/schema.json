@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rc_sections",
+  "info": {
+    "singularName": "rc-section",
+    "pluralName": "rc-sections",
+    "displayName": "RC - Sections",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "section_id": {
+      "type": "string"
+    },
+    "section_name": {
+      "type": "string"
+    },
+    "rc_pages": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::rc-page.rc-page",
+      "inversedBy": "rc_sections"
+    },
+    "tag": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blog.tag"
+    }
+  }
+}

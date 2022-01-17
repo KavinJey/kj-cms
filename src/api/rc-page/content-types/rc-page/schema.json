@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rc_pages",
+  "info": {
+    "singularName": "rc-page",
+    "pluralName": "rc-pages",
+    "displayName": "RC - Pages"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "seo_description": {
+      "type": "text"
+    },
+    "rc_sections": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::rc-section.rc-section",
+      "inversedBy": "rc_pages"
+    }
+  }
+}
