@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kj_experiences",
+  "info": {
+    "singularName": "kj-experience",
+    "pluralName": "kj-experiences",
+    "displayName": "KJ - Experience",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "position_title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "position_media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "company_logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    }
+  }
+}
